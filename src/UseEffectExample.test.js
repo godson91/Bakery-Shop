@@ -1,13 +1,15 @@
 import React from "react";
 //must be included in all test files or imported
 import { shallow, mount } from "enzyme";
-import App from "./App";
+import UseEffectExample from "./UseEffectExample";
+
+
 
 describe("Counter Testing", () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<UseEffectExample/>);
   });
 
   test("renders without crashing", () => {
@@ -38,4 +40,6 @@ describe("Counter Testing", () => {
   //   wrapper.find("#decrement-btn").simulate("click");
   //   expect(wrapper.find("#counter-value").text()).toBe("0");
   // });
+
+
 });
