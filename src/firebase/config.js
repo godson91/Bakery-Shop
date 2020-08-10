@@ -54,11 +54,11 @@ class Firebase {
     return logout;
   }
 
-  async getUserState() {
-    return new Promise((resolve) => {
-      this.auth.onAuthStateChanged(resolved);
-    });
-  }
+  // async getUserState() {
+  //   return new Promise((resolve) => {
+  //     this.auth.onAuthStateChanged(resolved);
+  //   });
+  // }
 }
 
 export default new Firebase();

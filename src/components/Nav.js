@@ -13,11 +13,11 @@ const Nav = (props) => {
   const dispatch = useDispatch();
   const logoutUserAction = () => dispatch(logoutUser());
 
-  useEffect(() => {
-    firebase.getUserState().then((user) => {
-      setUserState(user);
-    });
-  });
+  // useEffect(() => {
+  //   firebase.getUserState().then((user) => {
+  //     setUserState(user);
+  //   });
+  // });
 
   const logout = async () => {
     console.log("logout user");
@@ -27,29 +27,29 @@ const Nav = (props) => {
   };
 
   let button;
-  if (
-    (loginSelector.user && loginSelector.user.hasOwnProperty("user")) ||
-    (signinSelector.user && signinSelector.user.hasOwnProperty("user"))
-  )
-    return (
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">ReactReduxFirebaseAuth</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link to="/create">New Post</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link to="/signin">Sign In</Link>
-          </li>
-        </ul>
-      </nav>
-    );
+  // if (
+  //   (loginSelector.user && loginSelector.user.hasOwnProperty("user")) ||
+  //   (signinSelector.user && signinSelector.user.hasOwnProperty("user"))
+  // )
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">ReactReduxFirebaseAuth</Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link to="/create">New Post</Link>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <Link to="/signin">Sign In</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 };
 
 export default withRouter(Nav);
