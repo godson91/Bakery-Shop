@@ -2,6 +2,7 @@
 
 .Header {
   width: 100%;
+  font-weight: 600;
 
   .top-nav {
     display: flex;
@@ -20,6 +21,10 @@
     margin: 0 1rem;
     cursor: pointer;
     color: $fushia;
+
+    &:hover {
+      filter: brightness(120%);
+    }
   }
 
   nav {
