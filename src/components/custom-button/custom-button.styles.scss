@@ -1,0 +1,10 @@
+@import '../../styles/style.scss';
+
+.custom-button {
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0 1rem;
+  background-color: $fushia;
+}
