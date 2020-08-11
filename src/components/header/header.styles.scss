@@ -1,0 +1,12 @@
+@import '../../styles/style.scss';
+
+.Header {
+  svg {
+    height: 2rem;
+    margin: 0 1rem;
+  }
+
+  nav {
+    background-color: $medium-mint;
+  }
+}

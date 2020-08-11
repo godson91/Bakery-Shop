@@ -1,24 +1,17 @@
-import React from "react";
-//redux
-import Store from "./store/store";
-import { Provider } from "react-redux";
-//routes
-import Routes from "./routes";
-//components
-import Nav from "./components/Nav"
-//style
-import "./App.scss";
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
+import Header from './components/header/header.component';
 
-function App() {
-  return (
-    <Provider store={Store}>
+class App extends Component {
+  state = {};
+  render() {
+    return (
       <div className="App">
-        <Nav/>
-        <Routes/>
+        <Header />
       </div>
-    </Provider>
-  );
+    );
+  }
 }
 
 export default App;
