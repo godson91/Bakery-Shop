@@ -1,6 +1,8 @@
 @import '../../styles/style.scss';
 
 .Header {
+  width: 100%;
+
   .top-nav {
     display: flex;
     justify-content: space-between;
@@ -8,7 +10,6 @@
     padding: 1rem;
 
     .cart-order {
-      width: 15%;
       display: flex;
       justify-content: space-between;
     }
@@ -29,6 +30,11 @@
     justify-content: center;
     align-items: center;
 
+    //Hide in Desktop view
+    div {
+      display: none;
+    }
+
     a {
       cursor: pointer;
       display: flex;
@@ -37,6 +43,48 @@
       text-decoration: none;
       color: $fushia;
       margin: 0 3rem;
+    }
+  }
+}
+
+//  Media Queries for smaller devices
+@media screen and (max-width: 650px) {
+  .Header {
+    .top-nav {
+      padding: 0.5rem;
+      display: flex;
+      background-color: $medium-mint;
+      border-bottom: 5px solid $fushia;
+
+      .logo {
+        display: none;
+      }
+
+      button {
+        display: none;
+      }
+    }
+
+    svg {
+      margin: 0 0.5rem;
+    }
+
+    nav {
+      background-color: $white;
+      border-top: 2px solid $gold;
+      display: flex;
+
+      div {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.5rem;
+      }
+      // Hide all links
+      a {
+        display: none;
+      }
     }
   }
 }
