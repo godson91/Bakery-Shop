@@ -1,22 +1,19 @@
 @import '../../styles/style.scss';
 
 .Header {
-  border: 2px solid blue;
-
   .top-nav {
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 
     .cart-order {
-      border: 2px solid green;
       width: 15%;
       display: flex;
       justify-content: space-between;
     }
   }
+
   svg {
     height: 2rem;
     margin: 0 1rem;
@@ -26,5 +23,20 @@
 
   nav {
     background-color: $medium-mint;
+    border-top: 1px solid $fushia;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      text-decoration: none;
+      color: $fushia;
+      margin: 0 3rem;
+    }
   }
 }
