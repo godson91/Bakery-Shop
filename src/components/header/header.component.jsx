@@ -6,6 +6,7 @@ import { ReactComponent as Facebook } from '../../assets/facebook-square-brands.
 import { ReactComponent as Instagram } from '../../assets/instagram-brands.svg';
 import { ReactComponent as ShoppingCart } from '../../assets/shopping-cart-solid.svg';
 import { ReactComponent as Bars } from '../../assets/bars-solid.svg';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 import CustomButton from '../custom-button/custom-button.component';
 
@@ -15,20 +16,30 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="top-nav">
-        {/* social icons */}
+        {/* Social Icons container*/}
         <div className="social">
           <User />
           <Facebook />
           <Instagram />
         </div>
-        <Link to="/" className="logo">
-          Swayzer's Sweets
-        </Link>
+        {/* Logo Container */}
+        <div className="logo">
+          <div>
+            <span>Swayzer's</span>
+            <Link to="/">
+              <Logo />
+            </Link>
+            <span>Sweets</span>
+          </div>
+          <span className="logo-text">Specialty Cakes and Cookies</span>
+        </div>
+        {/* Order/Cart container */}
         <div className="cart-order">
           <CustomButton>Order Online</CustomButton>
           <ShoppingCart />
         </div>
       </div>
+      {/* Navigation  */}
       <nav>
         <div>
           <span>Swayzer's Sweets</span>

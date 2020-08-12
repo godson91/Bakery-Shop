@@ -20,13 +20,31 @@ exports[`Header component should render Header component 1`] = `
         instagram-brands.svg
       </svg>
     </div>
-    <a
+    <div
       className="logo"
-      href="/"
-      onClick={[Function]}
     >
-      Swayzer's Sweets
-    </a>
+      <div>
+        <span>
+          Swayzer's
+        </span>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <svg>
+            logo.svg
+          </svg>
+        </a>
+        <span>
+          Sweets
+        </span>
+      </div>
+      <span
+        className="logo-text"
+      >
+        Specialty Cakes and Cookies
+      </span>
+    </div>
     <div
       className="cart-order"
     >

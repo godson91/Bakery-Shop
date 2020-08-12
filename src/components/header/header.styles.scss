@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
 @import '../../styles/style.scss';
 
 .Header {
@@ -13,6 +14,34 @@
     .cart-order {
       display: flex;
       justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        color: $fushia;
+      }
+
+      .logo-text {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $gold;
+      }
+
+      svg {
+        height: 4rem;
+        width: 5rem;
+        margin: 0;
+      }
     }
   }
 
@@ -53,7 +82,7 @@
 }
 
 //  Media Queries for smaller devices
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .Header {
     .top-nav {
       padding: 0.5rem;
