@@ -28,6 +28,13 @@
         font-family: 'Playfair Display', serif;
         font-size: 2rem;
         color: $fushia;
+
+        svg {
+          height: 4rem;
+          width: 5rem;
+          margin: 0;
+          align-self: start;
+        }
       }
 
       .logo-text {
@@ -35,12 +42,6 @@
         font-weight: 400;
         font-size: 1rem;
         color: $gold;
-      }
-
-      svg {
-        height: 4rem;
-        width: 5rem;
-        margin: 0;
       }
     }
   }
@@ -107,15 +108,40 @@
       background-color: $white;
       border-top: 2px solid $gold;
       display: flex;
+      height: 4rem;
 
-      div {
-        height: 100%;
-        width: 100%;
+      .mobile-logo {
         display: flex;
         justify-content: space-between;
-        padding: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        height: 100%;
+        width: 100%;
+
+        .logo-details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          span {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: $fushia;
+          }
+
+          .logo-text {
+            color: $gold;
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+
+        svg {
+          width: 3rem;
+          height: 3rem;
+          margin: 0;
+        }
       }
-      // Hide all links
+
       a {
         display: none;
       }

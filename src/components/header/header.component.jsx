@@ -39,10 +39,14 @@ const Header = () => {
           <ShoppingCart />
         </div>
       </div>
-      {/* Navigation  */}
       <nav>
-        <div>
-          <span>Swayzer's Sweets</span>
+        {/* Container for Mobile to Display Logo and Humberger Icon */}
+        <div className="mobile-logo">
+          <Logo />
+          <div className="logo-details">
+            <span>Swayzer's Sweets</span>
+            <span className="logo-text">Specialty Cakes and Cookies</span>
+          </div>
           <Bars />
         </div>
         <Link to="/">Home</Link>

@@ -59,10 +59,24 @@ exports[`Header component should render Header component 1`] = `
     </div>
   </div>
   <nav>
-    <div>
-      <span>
-        Swayzer's Sweets
-      </span>
+    <div
+      className="mobile-logo"
+    >
+      <svg>
+        logo.svg
+      </svg>
+      <div
+        className="logo-details"
+      >
+        <span>
+          Swayzer's Sweets
+        </span>
+        <span
+          className="logo-text"
+        >
+          Specialty Cakes and Cookies
+        </span>
+      </div>
       <svg>
         bars-solid.svg
       </svg>
