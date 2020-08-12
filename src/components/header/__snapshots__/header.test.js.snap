@@ -1,3 +1,78 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Header component should render Header component 1`] = `ShallowWrapper {}`;
+exports[`Header component should render Header component 1`] = `
+<div
+  className="Header"
+>
+  <div
+    className="top-nav"
+  >
+    <div
+      className="social"
+    >
+      <svg>
+        user-alt-solid.svg
+      </svg>
+      <svg>
+        facebook-square-brands.svg
+      </svg>
+      <svg>
+        instagram-brands.svg
+      </svg>
+    </div>
+    <a
+      className="logo"
+      href="/"
+      onClick={[Function]}
+    >
+      Swayzer's Sweets
+    </a>
+    <div
+      className="cart-order"
+    >
+      <button
+        className="custom-button"
+      >
+        Order Online
+      </button>
+      <svg>
+        shopping-cart-solid.svg
+      </svg>
+    </div>
+  </div>
+  <nav>
+    <div>
+      <span>
+        Swayzer's Sweets
+      </span>
+      <svg>
+        bars-solid.svg
+      </svg>
+    </div>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/about"
+      onClick={[Function]}
+    >
+      About Us
+    </a>
+    <a
+      href="/shop"
+      onClick={[Function]}
+    >
+      Shop
+    </a>
+    <a
+      href="/contact"
+      onClick={[Function]}
+    >
+      Contact Us
+    </a>
+  </nav>
+</div>
+`;

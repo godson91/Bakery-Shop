@@ -1,6 +1,6 @@
 import React from 'react';
 //must be included in all test files or imported
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import App from './App';
 
 describe('Counter Testing', () => {
