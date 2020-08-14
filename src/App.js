@@ -1,24 +1,23 @@
-import React from "react";
-//redux
-import Store from "./store/store";
-import { Provider } from "react-redux";
-//routes
-import Routes from "./routes";
-//components
-import Nav from "./components/Nav"
-//style
-import "./App.scss";
+import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 
+// Components
+import Header from './components/header/header.component';
 
-function App() {
-  return (
-    <Provider store={Store}>
+//Pages
+import Homepage from './pages/homepage/homepage.component';
+
+class App extends Component {
+  render() {
+    return (
       <div className="App">
-        <Nav/>
-        <Routes/>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+        </Switch>
       </div>
-    </Provider>
-  );
+    );
+  }
 }
 
 export default App;

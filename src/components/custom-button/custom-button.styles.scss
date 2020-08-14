@@ -1,0 +1,16 @@
+@import '../../styles/style.scss';
+
+.custom-button {
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5rem;
+  border: none;
+  color: $white;
+  padding: 0 1rem;
+  background-color: $fushia;
+  font-family: 'Quicksand', sans-serif;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+}

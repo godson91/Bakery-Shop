@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+@import '../../styles/style.scss';
+
+.Header {
+  width: 100%;
+  font-weight: 600;
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .cart-order {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        color: $fushia;
+
+        svg {
+          height: 4rem;
+          width: 5rem;
+          margin: 0;
+          align-self: start;
+        }
+      }
+
+      .logo-text {
+        font-family: 'Playfair Display', serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: $gold;
+      }
+    }
+  }
+
+  svg {
+    height: 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    color: $fushia;
+
+    &:hover {
+      filter: brightness(120%);
+    }
+  }
+
+  nav {
+    background-color: $medium-mint;
+    border-top: 1px solid $fushia;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //Hide in Desktop view
+    div {
+      display: none;
+    }
+
+    a {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      text-decoration: none;
+      color: $fushia;
+      margin: 0 3rem;
+    }
+  }
+}
+
+//  Media Queries for smaller devices
+@media screen and (max-width: 700px) {
+  .Header {
+    .top-nav {
+      padding: 0.5rem;
+      display: flex;
+      background-color: $medium-mint;
+      border-bottom: 5px solid $fushia;
+
+      .logo {
+        display: none;
+      }
+
+      button {
+        display: none;
+      }
+    }
+
+    svg {
+      margin: 0 0.5rem;
+    }
+
+    nav {
+      background-color: $white;
+      border-top: 2px solid $gold;
+      display: flex;
+      height: 4rem;
+
+      .mobile-logo {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+        height: 100%;
+        width: 100%;
+
+        .logo-details {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          span {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: $fushia;
+          }
+
+          .logo-text {
+            color: $gold;
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+
+        svg {
+          width: 3rem;
+          height: 3rem;
+          margin: 0;
+        }
+      }
+
+      a {
+        display: none;
+      }
+    }
+  }
+}
