@@ -1,0 +1,45 @@
+@import '../../scss/base';
+@import '../../scss/variables';
+
+.nav-mobile {
+  width: 250px;
+  height: 25rem;
+  background-color: $fushia;
+  margin-top: -4rem;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+
+  .close {
+    text-align: right;
+    padding: 0.5rem 1rem;
+
+    svg {
+      height: 2rem;
+      fill: $medium-mint;
+      margin: 0;
+    }
+  }
+
+  .links {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .button {
+      margin-top: 2rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    height: 3rem;
+    color: $medium-mint;
+    border-bottom: 2px solid $medium-mint;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}

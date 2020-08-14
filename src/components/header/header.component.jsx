@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+
+import NavDropdown from '../nav-dropdown/nav-dropdown.component';
 
 import { ReactComponent as User } from '../../assets/user-alt-solid.svg';
 import { ReactComponent as Facebook } from '../../assets/facebook-square-brands.svg';
@@ -10,9 +13,11 @@ import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 import CustomButton from '../custom-button/custom-button.component';
 
+import { toggleNavHidden } from '../../redux/nav/nav.actions';
+
 import './header.styles.scss';
 
-const Header = () => {
+const Header = ({ hidden, toggleNavHidden }) => {
   return (
     <div className="Header">
       <div className="top-nav">
@@ -47,15 +52,26 @@ const Header = () => {
             <span>Swayzer's Sweets</span>
             <span className="logo-text">Specialty Cakes and Cookies</span>
           </div>
-          <Bars />
+          <Bars onClick={() => toggleNavHidden()} />
         </div>
-        <Link to="/">Home</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/contact">Contact Us</Link>
+        <div className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/contact">Contact Us</Link>
+        </div>
       </nav>
+      {!hidden ? <NavDropdown /> : null}
     </div>
   );
 };
 
-export default Header;
+const mapStateToProps = state => ({
+  hidden: state.nav.hidden,
+});
+
+const mapDispatchToProps = dispatch => ({
+  toggleNavHidden: () => dispatch(toggleNavHidden()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

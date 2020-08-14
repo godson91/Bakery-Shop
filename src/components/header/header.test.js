@@ -1,21 +1,36 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
+import configureStore from 'redux-mock-store';
 
 import Header from './header.component';
+import { shallow } from 'enzyme';
 
-describe('Header component', () => {
+const mockStore = configureStore();
+
+describe('Connected Header component', () => {
+  let store;
   let wrapper;
 
+  beforeEach(() => {
+    store = mockStore({
+      hidden: true,
+    });
+
+    wrapper = renderer.create(
+      <MemoryRouter>
+        <Header store={store} />
+      </MemoryRouter>
+    );
+  });
+
   it('should render Header component', () => {
-    wrapper = renderer
-      .create(
-        // Added MemoryRouter Component to test Link Components from react-router-dom
-        <MemoryRouter>
-          <Header />
-        </MemoryRouter>
-      )
-      .toJSON();
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper).toJSON().toMatchSnapshot();
+  });
+
+  it('should render connected component', () => {
+    const wrapper = shallow(<Header store={store} />).dive();
+    expect(wrapper.length).toEqual(1);
   });
 });
