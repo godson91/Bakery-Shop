@@ -49,7 +49,7 @@ exports[`Header component should render Header component 1`] = `
       className="cart-order"
     >
       <button
-        className="custom-button"
+        className="custom-button "
       >
         Order Online
       </button>
@@ -77,34 +77,100 @@ exports[`Header component should render Header component 1`] = `
           Specialty Cakes and Cookies
         </span>
       </div>
-      <svg>
+      <svg
+        className="bars"
+        onClick={[Function]}
+      >
         bars-solid.svg
       </svg>
     </div>
-    <a
-      href="/"
-      onClick={[Function]}
+    <div
+      className="nav-links"
     >
-      Home
-    </a>
-    <a
-      href="/about"
-      onClick={[Function]}
-    >
-      About Us
-    </a>
-    <a
-      href="/shop"
-      onClick={[Function]}
-    >
-      Shop
-    </a>
-    <a
-      href="/contact"
-      onClick={[Function]}
-    >
-      Contact Us
-    </a>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        href="/about"
+        onClick={[Function]}
+      >
+        About Us
+      </a>
+      <a
+        href="/shop"
+        onClick={[Function]}
+      >
+        Shop
+      </a>
+      <a
+        href="/contact"
+        onClick={[Function]}
+      >
+        Contact Us
+      </a>
+    </div>
   </nav>
+  <div
+    className="nav-mobile"
+  >
+    <div
+      className="close"
+    >
+      <svg
+        className="closeSvg"
+        onClick={[Function]}
+      >
+        close.svg
+      </svg>
+    </div>
+    <div
+      className="links"
+    >
+      <div>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+        <a
+          href="/shop"
+          onClick={[Function]}
+        >
+          Shop
+        </a>
+        <a
+          href="/cart"
+          onClick={[Function]}
+        >
+          Cart
+        </a>
+        <a
+          href="/about"
+          onClick={[Function]}
+        >
+          About Us
+        </a>
+        <a
+          href="/contact"
+          onClick={[Function]}
+        >
+          Contact Us
+        </a>
+      </div>
+      <div
+        className="button"
+      >
+        <button
+          className="custom-button sign-in-with-Google"
+        >
+          Sign in with Google
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
