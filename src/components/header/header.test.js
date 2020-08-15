@@ -1,36 +1,33 @@
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
-// import { Provider } from 'react-redux';
-import renderer from 'react-test-renderer';
-import configureStore from 'redux-mock-store';
-
-import Header from './header.component';
+import { Header } from './header.component';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 
-const mockStore = configureStore();
-
-describe('Connected Header component', () => {
-  let store;
+describe('Header component', () => {
   let wrapper;
+  //Mock toggleNavHidden function to replace one provided with mapDispatchToProps
+  const mockToggleFn = jest.fn();
 
   beforeEach(() => {
-    store = mockStore({
-      hidden: true,
-    });
+    // Pass the mock function as the header prop
+    wrapper = shallow(<Header toggleNavHidden={mockToggleFn} />);
+  });
 
-    wrapper = renderer.create(
-      <MemoryRouter>
-        <Header store={store} />
-      </MemoryRouter>
-    );
+  it('should call the toggleNavHidden function when in mobile view', () => {
+    wrapper.find('.bars').simulate('click');
+    expect(mockToggleFn.mock.calls.length).toBe(1);
   });
 
   it('should render Header component', () => {
-    expect(wrapper).toJSON().toMatchSnapshot();
-  });
-
-  it('should render connected component', () => {
-    const wrapper = shallow(<Header store={store} />).dive();
-    expect(wrapper.length).toEqual(1);
+    wrapper = renderer
+      .create(
+        // Added MemoryRouter Component to test Link Components from react-router-dom
+        <MemoryRouter>
+          <Header />
+        </MemoryRouter>
+      )
+      .toJSON();
+    expect(wrapper).toMatchSnapshot();
   });
 });

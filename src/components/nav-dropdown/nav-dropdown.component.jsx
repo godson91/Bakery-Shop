@@ -10,11 +10,11 @@ import { toggleNavHidden } from '../../redux/nav/nav.actions';
 
 import './nav-dropdown.styles.scss';
 
-const NavDropdown = ({ toggleNavHidden }) => {
+export const NavDropdown = ({ toggleNavHidden }) => {
   return (
     <div className="nav-mobile">
       <div className="close">
-        <Close onClick={() => toggleNavHidden()} />
+        <Close className="closeSvg" onClick={() => toggleNavHidden()} />
       </div>
       <div className="links">
         <div>

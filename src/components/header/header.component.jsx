@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import NavDropdown from '../nav-dropdown/nav-dropdown.component';
+import { NavDropdown } from '../nav-dropdown/nav-dropdown.component';
 
 import { ReactComponent as User } from '../../assets/user-alt-solid.svg';
 import { ReactComponent as Facebook } from '../../assets/facebook-square-brands.svg';
@@ -17,7 +17,7 @@ import { toggleNavHidden } from '../../redux/nav/nav.actions';
 
 import './header.styles.scss';
 
-const Header = ({ hidden, toggleNavHidden }) => {
+export const Header = ({ hidden, toggleNavHidden }) => {
   return (
     <div className="Header">
       <div className="top-nav">
@@ -52,7 +52,7 @@ const Header = ({ hidden, toggleNavHidden }) => {
             <span>Swayzer's Sweets</span>
             <span className="logo-text">Specialty Cakes and Cookies</span>
           </div>
-          <Bars onClick={() => toggleNavHidden()} />
+          <Bars className="bars" onClick={() => toggleNavHidden()} />
         </div>
         <div className="nav-links">
           <Link to="/">Home</Link>
