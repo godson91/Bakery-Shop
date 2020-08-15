@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { NavDropdown } from '../nav-dropdown/nav-dropdown.component';
+import NavDropdown from '../nav-dropdown/nav-dropdown.component';
 
 import { ReactComponent as User } from '../../assets/user-alt-solid.svg';
 import { ReactComponent as Facebook } from '../../assets/facebook-square-brands.svg';
@@ -61,7 +61,7 @@ export const Header = ({ hidden, toggleNavHidden }) => {
           <Link to="/contact">Contact Us</Link>
         </div>
       </nav>
-      {!hidden ? <NavDropdown /> : null}
+      {hidden ? null : <NavDropdown />}
     </div>
   );
 };
