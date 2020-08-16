@@ -113,20 +113,19 @@ h6 {
 .center {
   z-index: 200;
   color: mintcream;
-  border: #a13d63 1px solid;
   text-align: center;
   position: relative;
-  top: 20%;
+  top: 28%;
   left: 21%;
   width: 60%;
 }
 
 .center h1 {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .center p {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   line-height: 19px;
 }
 

@@ -6,7 +6,7 @@ import './landingpagehero.styles.scss'
 
 function LandingPageHero() {
     return (
-        <div>
+        <div className='hero'>
            <Slider>
 {content.map((item, index) => (
 	<div
