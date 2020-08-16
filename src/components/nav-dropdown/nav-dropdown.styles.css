@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Quicksand");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Quicksand");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-weight: normal;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif, sans-serif;
+}
+
+.nav-mobile {
+  width: 250px;
+  height: 25rem;
+  background-color: #a13d63;
+  margin-top: -4rem;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-mobile .close {
+  text-align: right;
+  padding: 0.5rem 1rem;
+}
+
+.nav-mobile .close svg {
+  height: 2rem;
+  fill: #8ce1a8;
+  margin: 0;
+}
+
+.nav-mobile .links {
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-mobile .links .button {
+  margin-top: 2rem;
+}
+
+.nav-mobile a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  height: 3rem;
+  color: #8ce1a8;
+  border-bottom: 2px solid #8ce1a8;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=nav-dropdown.styles.css.map */

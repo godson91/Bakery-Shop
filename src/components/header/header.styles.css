@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Quicksand");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito|Quicksand");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-weight: normal;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif, sans-serif;
+}
+
+.Header {
+  width: 100%;
+  font-weight: 600;
+}
+
+.Header .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.Header .top-nav .cart-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Header .top-nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header .top-nav .logo div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: #a13d63;
+}
+
+.Header .top-nav .logo div svg {
+  height: 4rem;
+  width: 5rem;
+  margin: 0;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.Header .top-nav .logo .logo-text {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #cec328;
+}
+
+.Header svg {
+  height: 2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  color: #a13d63;
+}
+
+.Header svg:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.Header nav {
+  background-color: #8ce1a8;
+  border-top: 1px solid #a13d63;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header nav .mobile-logo {
+  display: none;
+}
+
+.Header nav a {
+  cursor: pointer;
+  height: 100%;
+  text-decoration: none;
+  color: #a13d63;
+  margin: 0 3rem;
+}
+
+@media screen and (max-width: 700px) {
+  .Header .top-nav {
+    padding: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #8ce1a8;
+    border-bottom: 5px solid #a13d63;
+  }
+  .Header .top-nav .logo {
+    display: none;
+  }
+  .Header .top-nav button {
+    display: none;
+  }
+  .Header svg {
+    margin: 0 0.5rem;
+  }
+  .Header nav {
+    background-color: #ffffff;
+    border-top: 2px solid #cec328;
+    height: 4rem;
+  }
+  .Header nav .mobile-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    width: 100%;
+  }
+  .Header nav .mobile-logo .logo-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Header nav .mobile-logo .logo-details span {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    color: #a13d63;
+  }
+  .Header nav .mobile-logo .logo-details .logo-text {
+    color: #cec328;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .Header nav .mobile-logo svg {
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+  }
+  .Header nav .nav-links a {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.styles.css.map */
