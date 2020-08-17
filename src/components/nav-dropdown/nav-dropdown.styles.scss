@@ -7,8 +7,10 @@
   background-color: $fushia;
   margin-top: -4rem;
   margin-left: auto;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 16%;
+  right: 0;
+  z-index: 1000;
 
   .close {
     text-align: right;
