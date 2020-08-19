@@ -1,0 +1,13 @@
+@import '../../scss/base';
+@import '../../scss/variables';
+
+.directory {
+  background-color: $barely_green;
+  padding: 1rem;
+  text-align: center;
+
+  .directory-items {
+    margin-top: 1rem;
+    display: flex;
+  }
+}
