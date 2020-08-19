@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render DirectoryItem component 1`] = `
+<div
+  className="directory-item"
+>
+  <div
+    className="image"
+  >
+    <span />
+  </div>
+  <h3 />
+</div>
+`;

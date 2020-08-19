@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Directory component 1`] = `
+<div
+  className="directory"
+>
+  <h1>
+    Products
+  </h1>
+  <div
+    className="directory-items"
+  >
+    <div
+      className="directory-item"
+    >
+      <div
+        className="image"
+      >
+        <span>
+          <svg>
+            cookies.svg
+          </svg>
+        </span>
+      </div>
+      <h3>
+        Cookies
+      </h3>
+    </div>
+    <div
+      className="directory-item"
+    >
+      <div
+        className="image"
+      >
+        <span>
+          <svg>
+            cupcakes.svg
+          </svg>
+        </span>
+      </div>
+      <h3>
+        Cup Cakes
+      </h3>
+    </div>
+    <div
+      className="directory-item"
+    >
+      <div
+        className="image"
+      >
+        <span>
+          <svg>
+            pudding.svg
+          </svg>
+        </span>
+      </div>
+      <h3>
+        Puddings
+      </h3>
+    </div>
+    <div
+      className="directory-item"
+    >
+      <div
+        className="image"
+      >
+        <span>
+          <svg>
+            pies.svg
+          </svg>
+        </span>
+      </div>
+      <h3>
+        Pies
+      </h3>
+    </div>
+    <div
+      className="directory-item"
+    >
+      <div
+        className="image"
+      >
+        <span>
+          <svg>
+            cake.svg
+          </svg>
+        </span>
+      </div>
+      <h3>
+        Cakes
+      </h3>
+    </div>
+  </div>
+</div>
+`;

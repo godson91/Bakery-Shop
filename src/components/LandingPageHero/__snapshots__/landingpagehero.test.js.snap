@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render LandingHero component 1`] = `
+<div>
+  <div
+    className="slider"
+  >
+    <a
+      className="previousButton"
+      onClick={[Function]}
+    >
+      <svg
+        height="30"
+        viewBox="0 0 20 30"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          fill="#000"
+          points="20 15 4.228 0 0 3.626 11.954 15 0 26.374 4.228 30"
+          transform="rotate(180 10 15)"
+        />
+      </svg>
+    </a>
+    <a
+      className="nextButton"
+      onClick={[Function]}
+    >
+      <svg
+        height="30"
+        viewBox="0 0 20 30"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          fill="#000"
+          points="20 15 4.228 0 0 3.626 11.954 15 0 26.374 4.228 30"
+          transform="rotate(0 10 15)"
+        />
+      </svg>
+    </a>
+    <div
+      className="track"
+    >
+      <div
+        className="slide current slideBG"
+        style={
+          Object {
+            "background": "url('https://firebasestorage.googleapis.com/v0/b/bakery-dev-server.appspot.com/o/images%2Fbanana%20pudding.png?alt=media&token=319d993f-6ebf-435d-bbd0-ca2c5e96d130') no-repeat center center",
+            "backgroundSize": "cover",
+            "outline": "200px solid rgba(0, 0, 0, 0.4)",
+            "outlineOffset": "-200px",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="center"
+        >
+          <h1>
+            Vulputate Mollis Ultricies
+          </h1>
+          <p>
+            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+          </p>
+          <button
+            className="custom-button "
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div
+        className="slide next slideBG"
+        style={
+          Object {
+            "background": "url('https://firebasestorage.googleapis.com/v0/b/bakery-dev-server.appspot.com/o/images%2Fmango_cheesecake.jpg?alt=media&token=b2ca7c3f-0197-435b-b17b-4687df8a8fbd') no-repeat center center",
+            "backgroundSize": "cover",
+            "outline": "200px solid rgba(0, 0, 0, 0.4)",
+            "outlineOffset": "-200px",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="center"
+        >
+          <h1>
+            Tortor Dapibus
+          </h1>
+          <p>
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <button
+            className="custom-button "
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div
+        className="slide hidden slideBG"
+        style={
+          Object {
+            "background": "url('https://firebasestorage.googleapis.com/v0/b/bakery-dev-server.appspot.com/o/images%2Fbrownie_cake.jpg?alt=media&token=68896693-8bf8-4655-a4f3-88992ea32b15') no-repeat center center",
+            "backgroundSize": "cover",
+            "outline": "200px solid rgba(0, 0, 0, 0.4)",
+            "outlineOffset": "-200px",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="center"
+        >
+          <h1>
+            Phasellus volutpat metus
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+          </p>
+          <button
+            className="custom-button "
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div
+        className="slide hidden slideBG"
+        style={
+          Object {
+            "background": "url('https://firebasestorage.googleapis.com/v0/b/bakery-dev-server.appspot.com/o/images%2Ftart.jpg?alt=media&token=a0943076-4c69-4285-b432-38f6161d65b6') no-repeat center center",
+            "backgroundSize": "cover",
+            "outline": "200px solid rgba(0, 0, 0, 0.4)",
+            "outlineOffset": "-200px",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="center"
+        >
+          <h1>
+            Ultricies Vulputate Mollis
+          </h1>
+          <p>
+            Aenean eu leo quam. Pellentesque ornare sem lacinia  nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis.
+          </p>
+          <button
+            className="custom-button "
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div
+        className="slide hidden slideBG"
+        style={
+          Object {
+            "background": "url('https://firebasestorage.googleapis.com/v0/b/bakery-dev-server.appspot.com/o/images%2Fbrownie.jpg?alt=media&token=6bd8070f-69f9-48fb-a3e8-008f78acbc7a') no-repeat center center",
+            "backgroundSize": "cover",
+            "outline": "200px solid rgba(0, 0, 0, 0.4)",
+            "outlineOffset": "-200px",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="center"
+        >
+          <h1>
+            Odo Aenean Quam Tortor
+          </h1>
+          <p>
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button
+            className="custom-button "
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+      <div
+        className="slide previous slideBG"
+        style={
+          Object {
+            "background": "url('https://firebasestorage.googleapis.com/v0/b/bakery-dev-server.appspot.com/o/images%2Fcookieplate.jpg?alt=media&token=87eda7be-c9d5-4b0a-a773-469961b6da12') no-repeat center center",
+            "backgroundSize": "cover",
+            "outline": "200px solid rgba(0, 0, 0, 0.4)",
+            "outlineOffset": "-200px",
+            "overflow": "hidden",
+          }
+        }
+      >
+        <div
+          className="center"
+        >
+          <h1>
+            Volutpat Aenean metus
+          </h1>
+          <p>
+            quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentumconsectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis.
+          </p>
+          <button
+            className="custom-button "
+          >
+            Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
