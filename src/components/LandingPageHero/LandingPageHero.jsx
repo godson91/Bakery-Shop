@@ -1,7 +1,8 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Slider from 'react-animated-slider';
 import content from './slides';
-import CustomButton from '../custom-button/custom-button.component';
+import CustomButton from '../custom-button/custom-button.component'
 import './landingpagehero.styles.scss';
 
 function LandingPageHero() {
@@ -23,7 +24,7 @@ function LandingPageHero() {
             <div className="center">
               <h1>{item.title}</h1>
               <p>{item.description}</p>
-              <CustomButton>Order Now</CustomButton>
+              <Link to='/shop'><CustomButton>Order Now</CustomButton></Link>
             </div>
           </div>
         ))}
