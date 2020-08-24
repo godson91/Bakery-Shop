@@ -11,15 +11,18 @@
 
   h3 {
     margin-top: 1rem;
+    color:$gold;
+    font-family: $font-secondary;
+    text-shadow: 1px 1px 2px rgb(70, 67, 67);
   }
 
   .image {
-    height: 10rem;
-    width: 10rem;
+    height: 3.5rem;
+    width: 3.5rem;
     background-color: $white;
     border: 2px solid $dark_grey;
     border-radius: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   svg {
