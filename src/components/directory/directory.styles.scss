@@ -5,9 +5,13 @@
   background-color: $barely_green;
   padding: 1rem;
   text-align: center;
+  min-width: 500px;
 
   .directory-items {
     margin-top: 1rem;
     display: flex;
   }
+
+
 }
+
