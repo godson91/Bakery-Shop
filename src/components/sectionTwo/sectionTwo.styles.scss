@@ -1,0 +1,32 @@
+@import '../../scss/base';
+@import '../../scss/variables';
+
+.sectionTwo{
+    color: $fushia;
+    padding: 20px;
+
+    .centeredText{
+        width: 500px;
+        text-align: center;
+        margin: auto;
+    }
+
+    p{
+        margin: 10px 0px;
+    }
+
+}
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Nunito|Quicksand');
+
+// $barely_green: #e8f8ee;
+// $medium_mint: #8ce1a8;
+// $fushia: #a13d63;
+// $gold: #cec328;
+// $dark_grey: #707070;
+// $lt_pink: #ecb4c9;
+// $white: #ffffff;
+// $font-primary: 'Quicksand', sans-serif;
+// $font-secondary: 'Playfair Display', serif;
