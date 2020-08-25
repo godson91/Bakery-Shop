@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './../../components/LandingPageHero/LandingPageHero';
 import Directory from '../../components/directory/directory.component';
 import SectionTwo from '../../components/sectionTwo/SectionTwo'
+import AboutUs from '../../pages/aboutUs/AboutUs'
 import './homepage.styles.scss';
 
 const HomePage = () => {
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Hero />
       <SectionTwo/>
       <Directory />
+      <AboutUs/>
     </div>
   );
 };
