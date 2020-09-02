@@ -16,6 +16,7 @@ import PrivateRoute from "./PrivateRoute";
 class App extends Component {
   render() {
     return (
+      // Should this be between header and switch?
       <AuthProvider>
         <div className='App'>
           <Header />

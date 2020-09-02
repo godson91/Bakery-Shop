@@ -13,46 +13,46 @@ const app = firebase.initializeApp ({
   messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,  
 });
 
-class Firebase {
-  constructor() {
-    firebase.initializeApp(config);
-    this.auth = firebase.auth();
-    this.db = firebase.firestore();
-  }
+// class Firebase {
+//   constructor() {
+//     firebase.initializeApp(config);
+//     this.auth = firebase.auth();
+//     this.db = firebase.firestore();
+//   }
 
-  //signin
-  async signin(email, password) {
-    const user = await firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .catch((err) => {
-        console.log(err);
-      });
+//   //signup
+//   async signUp(email, password) {
+//     const user = await firebase
+//       .auth()
+//       .createUserWithEmailAndPassword(email, password)
+//       .catch((err) => {
+//         console.log(err);
+//       });
 
-    return user;
-  }
+//     return user;
+//   }
 
-  //login in
-  async login(email, password) {
-    const user = await firebase
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .catch((err) => {
-        console.log(err);
-      });
-    return user;
-  }
+//   //login in
+//   async login(email, password) {
+//     const user = await firebase
+//       .auth()
+//       .signInWithEmailAndPassword(email, password)
+//       .catch((err) => {
+//         console.log(err);
+//       });
+//     return user;
+//   }
 
-  //logout
-  async logout() {
-    const logout = await firebase
-      .auth()
-      .signOut()
-      .catch((err) => {
-        console.log(err);
-      });
-    return logout;
-  }
-}
+//   //logout
+//   async logout() {
+//     const logout = await firebase
+//       .auth()
+//       .signOut()
+//       .catch((err) => {
+//         console.log(err);
+//       });
+//     return logout;
+//   }
+// }
 
 export default app;

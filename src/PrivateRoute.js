@@ -3,7 +3,7 @@ import { Route, Redirect } from "react-router-dom";
 import { AuthContext } from "./Auth";
 
 const PrivateRoute = ({ component: RouteComponent, ...rest }) => {
-  const { currenUser } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
   return (
     <Route
       {...rest}
@@ -13,7 +13,7 @@ const PrivateRoute = ({ component: RouteComponent, ...rest }) => {
           // render route component
           <RouteComponent {...routeProps} />
         ) : (
-          // if not, redirect to login 
+          // if not, redirect to login
           <Redirect to={"/login"} />
         )
       }
