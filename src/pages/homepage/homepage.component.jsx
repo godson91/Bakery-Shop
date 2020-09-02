@@ -1,17 +1,19 @@
-import React from 'react';
-import Hero from './../../components/LandingPageHero/LandingPageHero';
-import Directory from '../../components/directory/directory.component';
-import SectionTwo from '../../components/sectionTwo/SectionTwo'
-import AboutUs from '../../pages/aboutUs/AboutUs'
-import './homepage.styles.scss';
+import React from "react";
+import Hero from "./../../components/LandingPageHero/LandingPageHero";
+import Directory from "../../components/directory/directory.component";
+import SectionTwo from "../../components/sectionTwo/SectionTwo";
+import AboutUs from "../../pages/aboutUs/AboutUs";
+import "./homepage.styles.scss";
+import { app } from "firebase";
 
 const HomePage = () => {
   return (
-    <div className="homepage">
+    <div className='homepage'>
       <Hero />
-      <SectionTwo/>
+      <SectionTwo />
       <Directory />
-      <AboutUs/>
+      <AboutUs />
+      <button onClick={() => app.auth().signOut()}>Sign Out</button>
     </div>
   );
 };

@@ -3,15 +3,15 @@ import "firebase/auth";
 import "firebase/firestore";
 import "firebase/storage";
 
-const config = {
-  apiKey: "AIzaSyALuQoBxdMojdTahl3SOWDxopEPEYJkbxw",
-  authDomain: "bakery-dev-server-d76b2.firebaseapp.com",
-  databaseURL: "https://bakery-dev-server-d76b2.firebaseio.com",
-  projectId: "bakery-dev-server-d76b2",
-  storageBucket: "bakery-dev-server-d76b2.appspot.com",
-  messagingSenderId: "162835995325",
-  appId: "1:162835995325:web:fd643f9f401b98019b75d4",
-};
+// initialize firebase app using .env variables for security
+const app = firebase.initializeApp ({
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  authDomain:  process.env.REACT_APP_FIREBASE_DOMAIN,
+  databaseURL: process.env.REACT_APP_FIREBASE_DATABASE,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,  
+});
 
 class Firebase {
   constructor() {
@@ -53,12 +53,6 @@ class Firebase {
       });
     return logout;
   }
-
-  // async getUserState() {
-  //   return new Promise((resolve) => {
-  //     this.auth.onAuthStateChanged(resolved);
-  //   });
-  // }
 }
 
-export default new Firebase();
+export default app;
