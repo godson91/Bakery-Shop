@@ -51,7 +51,7 @@ describe('Header component', () => {
     });
   });
 
-  describe('if humbergerBtn is clicked', () => {
+  describe('if hamburgerBtn is clicked', () => {
     const mockProps = {
       hidden: false,
       toggleNavHidden: mockToggleFn,
