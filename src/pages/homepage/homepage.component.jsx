@@ -13,6 +13,7 @@ const HomePage = () => {
       <SectionTwo />
       <Directory />
       <AboutUs />
+      {/* button to sign out user using firebase api */}
       <button onClick={() => app.auth().signOut()}>Sign Out</button>
     </div>
   );
