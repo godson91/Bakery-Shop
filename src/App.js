@@ -4,31 +4,30 @@ import { Route, Switch } from "react-router-dom";
 // Components
 import Header from "./components/header/header.component";
 
-//Pages
+//Pages 
 import Homepage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import NotFound from "./pages/404NotFound/NotFound";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/contactUs";
 import { AuthProvider } from "./Auth";
-import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./firebase/PrivateRoute";
 
 class App extends Component {
   render() {
     return (
-      // Should this be between header and switch?
-      <AuthProvider>
-        <div className='App'>
-          <Header />
-          <Switch>
-            <PrivateRoute exact path='/' component={Homepage} />
-            <Route path='/shop' component={ShopPage} />
-            <Route path='/about' component={AboutUs} />
-            <Route path='/contact' component={ContactUs} />
-            <Route component={NotFound} />
-          </Switch>
-        </div>
-      </AuthProvider>
+      <div className='App'>
+        <Header />
+          <AuthProvider>
+            <Switch>
+              <PrivateRoute exact path='/' component={Homepage} />
+              <Route path='/shop' component={ShopPage} />
+              <Route path='/about' component={AboutUs} />
+              <Route path='/contact' component={ContactUs} />
+              <Route component={NotFound} />
+            </Switch>
+          </AuthProvider>
+      </div>
     );
   }
 }

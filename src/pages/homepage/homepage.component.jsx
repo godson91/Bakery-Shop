@@ -4,7 +4,7 @@ import Directory from "../../components/directory/directory.component";
 import SectionTwo from "../../components/sectionTwo/SectionTwo";
 import AboutUs from "../../pages/aboutUs/AboutUs";
 import "./homepage.styles.scss";
-import { app } from "firebase";
+import app from "../../base";
 
 const HomePage = () => {
   return (
@@ -13,7 +13,6 @@ const HomePage = () => {
       <SectionTwo />
       <Directory />
       <AboutUs />
-      {/* button to sign out user using firebase api */}
       <button onClick={() => app.auth().signOut()}>Sign Out</button>
     </div>
   );
