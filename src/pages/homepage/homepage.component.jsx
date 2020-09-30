@@ -4,7 +4,7 @@ import Directory from "../../components/directory/directory.component";
 import SectionTwo from "../../components/sectionTwo/SectionTwo";
 import AboutUs from "../../pages/aboutUs/AboutUs";
 import "./homepage.styles.scss";
-import app from "../../base";
+import app from "../../firebase/Login";
 
 const HomePage = () => {
   return (

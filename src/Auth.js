@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import app from "./base";
+import app from "./firebase/fire";
 
 export const AuthContext = React.createContext();
 // Provider component that will store auth status for users

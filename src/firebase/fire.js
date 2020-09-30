@@ -13,6 +13,10 @@ const app = firebase.initializeApp({
   messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID,
 });
 
+const fire = firebase.initializeApp(firebaseConfig);
+
+export default fire;
+
 // class Firebase {
 //   constructor() {
 //     firebase.initializeApp(config);
@@ -54,5 +58,3 @@ const app = firebase.initializeApp({
 //     return logout;
 //   }
 // }
-
-export default app;
