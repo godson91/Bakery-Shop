@@ -1,4 +1,4 @@
-export default [
+const SHOP_DATA = [
   {
     title: 'Caramel Cheesecake',
     description:
@@ -165,3 +165,5 @@ export default [
     tag: 'cheesecake',
   },
 ];
+
+export default SHOP_DATA;

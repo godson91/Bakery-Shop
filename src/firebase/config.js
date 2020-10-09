@@ -28,7 +28,6 @@ class Firebase {
       .catch((err) => {
         console.log(err);
       });
-
     return user;
   }
 
