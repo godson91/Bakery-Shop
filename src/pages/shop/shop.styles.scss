@@ -1,0 +1,10 @@
+@import '../../scss/base';
+@import '../../scss/variables';
+
+.shop {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

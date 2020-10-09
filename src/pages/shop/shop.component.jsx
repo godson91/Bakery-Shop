@@ -7,9 +7,8 @@ import './shop.styles.scss';
 
 const ShopPage = () => {
   return (
-    <div>
-      <h1>SHOP PAGE</h1>
-      <ShopItem />
+    <div className='shop'>
+      {SHOP_DATA.map(({id, ...otherProps}) => <ShopItem key={id} {...otherProps}/>)}
     </div>
   );
 };

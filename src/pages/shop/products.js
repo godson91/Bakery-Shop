@@ -1,5 +1,6 @@
 const SHOP_DATA = [
   {
+    id: 1,
     title: 'Caramel Cheesecake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -10,7 +11,7 @@ const SHOP_DATA = [
     slice: '5',
     tag: 'pie',
   },
-  {
+  {id: 2,
     title: 'Mixed Berry Cheesecake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -22,6 +23,7 @@ const SHOP_DATA = [
     tag: 'pie',
   },
   {
+    id: 3,
     title: 'Blackberry Cheesecake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -33,6 +35,7 @@ const SHOP_DATA = [
     tag: 'pie',
   },
   {
+    id: 4,
     title: 'Chocolate Ganache Cake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -44,6 +47,7 @@ const SHOP_DATA = [
     tag: 'cake',
   },
   {
+    id: 5,
     title: 'Sweet Potato Pie',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -55,6 +59,7 @@ const SHOP_DATA = [
     tag: 'pie',
   },
   {
+    id: 6,
     title: 'Sweet Potato Pie',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -66,6 +71,7 @@ const SHOP_DATA = [
     tag: 'pie',
   },
   {
+    id: 7,
     title: 'Monkey Bread',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -77,6 +83,7 @@ const SHOP_DATA = [
     tag: 'cake',
   },
   {
+    id: 8,
     title: 'Banana Pudding',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -88,6 +95,7 @@ const SHOP_DATA = [
     tag: 'pudding',
   },
   {
+    id: 9,
     title: 'Chocolate Chip Cookies',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -99,6 +107,7 @@ const SHOP_DATA = [
     tag: 'cookies',
   },
   {
+    id: 10,
     title: 'Chocolate Cupcake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -110,6 +119,7 @@ const SHOP_DATA = [
     tag: 'cupcake',
   },
   {
+    id: 11,
     title: 'Oreo Cupcake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -121,6 +131,7 @@ const SHOP_DATA = [
     tag: 'cupcake',
   },
   {
+    id: 12,
     title: 'Chai Latte Cupcake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -132,6 +143,7 @@ const SHOP_DATA = [
     tag: 'cupcake',
   },
   {
+    id: 13,
     title: 'Mixed Berry Tart',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -143,6 +155,7 @@ const SHOP_DATA = [
     tag: 'cake',
   },
   {
+    id: 14,
     title: 'Fudge Brownie',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -154,6 +167,7 @@ const SHOP_DATA = [
     tag: 'cake',
   },
   {
+    id: 15,
     title: 'Mango Cheesecake',
     description:
       'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
