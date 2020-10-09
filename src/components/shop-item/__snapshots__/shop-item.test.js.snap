@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render DirectoryItem component 1`] = `
+<div
+  className="shopItem"
+>
+  <div
+    className="image"
+  >
+    <img
+      alt="undefined"
+      src="undefined"
+    />
+  </div>
+  <h2 />
+  <div
+    className="price"
+  >
+    <span>
+      $undefined full
+    </span>
+    <span>
+      $undefined slice
+    </span>
+  </div>
+  <button
+    className="custom-button "
+  >
+    Add to Cart
+  </button>
+</div>
+`;
