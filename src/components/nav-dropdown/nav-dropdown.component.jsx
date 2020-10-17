@@ -32,7 +32,7 @@ export const NavDropdown = ({ toggleNavHidden }) => {
   );
 };
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   toggleNavHidden: () => dispatch(toggleNavHidden()),
 });
 

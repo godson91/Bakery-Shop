@@ -57,8 +57,8 @@ const SHOP_DATA = [
           'https://firebasestorage.googleapis.com/v0/b/bakery-dev-server-d76b2.appspot.com/o/sweetpotatopie.png?alt=media&token=e2832630-e05e-48e2-93f0-209ab8aea1c2',
         full: '20',
         slice: '5',
-      }
-    ]
+      },
+    ],
   },
   {
     id: 2,
@@ -107,8 +107,8 @@ const SHOP_DATA = [
           'https://firebasestorage.googleapis.com/v0/b/bakery-dev-server-d76b2.appspot.com/o/brownie.jpg?alt=media&token=36375e27-900b-4e2c-a111-906df98d6e2c',
         full: '20',
         slice: '5',
-      }
-    ]
+      },
+    ],
   },
   {
     id: 3,
@@ -126,7 +126,7 @@ const SHOP_DATA = [
         full: '20',
         slice: '5',
       },
-    ]
+    ],
   },
   {
     id: 4,
@@ -153,8 +153,8 @@ const SHOP_DATA = [
           'https://firebasestorage.googleapis.com/v0/b/bakery-dev-server-d76b2.appspot.com/o/mango_cheesecake.jpg?alt=media&token=30a2f88d-0630-4103-8c2c-138c9ed2ef08',
         full: '20',
         slice: '5',
-      }
-    ]
+      },
+    ],
   },
   {
     id: 5,
@@ -193,9 +193,9 @@ const SHOP_DATA = [
           'https://firebasestorage.googleapis.com/v0/b/bakery-dev-server-d76b2.appspot.com/o/cupcake3.jpg?alt=media&token=5d9630aa-62c6-48e7-b636-fb4e825aef76',
         full: '20',
         slice: '5',
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];
 
 export default SHOP_DATA;
