@@ -1,18 +1,22 @@
 import React from 'react';
-import SHOP_DATA from './products';
+import { connect } from 'react-redux';
 
 import ShopItem from '../../components/shop-item/shop-item.component';
 
 import './shop.styles.scss';
 
-const ShopPage = () => {
+const ShopPage = ({ collections }) => {
   return (
     <div className="shop">
-      {SHOP_DATA.map(({ id, ...otherProps }) => (
+      {collections.map(({ id, ...otherProps }) => (
         <ShopItem key={id} {...otherProps} />
       ))}
     </div>
   );
 };
 
-export default ShopPage;
+const mapStateToProps = ({ shop: { collections } }) => ({
+  collections,
+});
+
+export default connect(mapStateToProps)(ShopPage);
