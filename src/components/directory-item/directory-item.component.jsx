@@ -3,13 +3,9 @@ import { withRouter } from 'react-router-dom';
 
 import './directory-item.styles.scss';
 
-const DirectoryItem = ({ image, title, linkUrl, history, match }) => {
-  console.log(match);
+const DirectoryItem = ({ image, title, linkUrl }) => {
   return (
-    <div
-      className="directory-item"
-      onClick={() => history.push(`${match.url}${linkUrl}`)}
-    >
+    <div className="directory-item">
       <div className="image">
         <span className="dirBtns">{image}</span>
       </div>

@@ -1,16 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import ShopItem from '../../components/shop-item/shop-item.component';
+import CollectionsOverview from '../../components/collections-overview/collections-overview.component';
 
 import './shop.styles.scss';
 
 const ShopPage = ({ collections }) => {
   return (
     <div className="shop">
-      {collections.map(({ id, ...otherProps }) => (
-        <ShopItem key={id} {...otherProps} />
-      ))}
+      <CollectionsOverview />
     </div>
   );
 };

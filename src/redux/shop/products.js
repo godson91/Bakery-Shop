@@ -37,7 +37,7 @@ const SHOP_DATA = [
         slice: '5',
       },
       {
-        id: 5,
+        id: 4,
         title: 'Sweet Potato Pie',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -48,7 +48,7 @@ const SHOP_DATA = [
         slice: '5',
       },
       {
-        id: 6,
+        id: 5,
         title: 'Sweet Potato Pie',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -66,7 +66,7 @@ const SHOP_DATA = [
     routeName: 'cake',
     items: [
       {
-        id: 4,
+        id: 6,
         title: 'Chocolate Ganache Cake',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -87,7 +87,7 @@ const SHOP_DATA = [
         slice: '5',
       },
       {
-        id: 13,
+        id: 8,
         title: 'Mixed Berry Tart',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -98,7 +98,7 @@ const SHOP_DATA = [
         slice: '5',
       },
       {
-        id: 14,
+        id: 9,
         title: 'Fudge Brownie',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -116,7 +116,7 @@ const SHOP_DATA = [
     routeName: 'pudding',
     items: [
       {
-        id: 8,
+        id: 10,
         title: 'Banana Pudding',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -134,7 +134,7 @@ const SHOP_DATA = [
     routeName: 'cookies',
     items: [
       {
-        id: 9,
+        id: 11,
         title: 'Chocolate Chip Cookies',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -145,7 +145,7 @@ const SHOP_DATA = [
         slice: '5',
       },
       {
-        id: 15,
+        id: 12,
         title: 'Mango Cheesecake',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -162,7 +162,7 @@ const SHOP_DATA = [
     routeName: 'cupcakes',
     items: [
       {
-        id: 10,
+        id: 13,
         title: 'Chocolate Cupcake',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -173,7 +173,7 @@ const SHOP_DATA = [
         slice: '5',
       },
       {
-        id: 11,
+        id: 14,
         title: 'Oreo Cupcake',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
@@ -184,7 +184,7 @@ const SHOP_DATA = [
         slice: '5',
       },
       {
-        id: 12,
+        id: 15,
         title: 'Chai Latte Cupcake',
         description:
           'Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.',
