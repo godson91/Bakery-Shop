@@ -7,8 +7,10 @@ import './shop.styles.scss';
 
 const ShopPage = () => {
   return (
-    <div className='shop'>
-      {SHOP_DATA.map(({id, ...otherProps}) => <ShopItem key={id} {...otherProps}/>)}
+    <div className="shop">
+      {SHOP_DATA.map(({ id, ...otherProps }) => (
+        <ShopItem key={id} {...otherProps} />
+      ))}
     </div>
   );
 };

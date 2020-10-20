@@ -1,18 +1,24 @@
 import React from 'react';
-import products from './directory.data';
+import { connect } from 'react-redux';
 
 import DirectoryItem from '../directory-item/directory-item.component';
 import './directory.styles.scss';
 
-const Directory = () => (
-  <div className="directory">
-    <h1>Products</h1>
-    <div className="directory-items">
-      {products.map(({ id, ...otherProps }) => (
-        <DirectoryItem key={id} {...otherProps} />
-      ))}
+const Directory = ({ products }) => {
+  return (
+    <div className="directory">
+      <h1>Products</h1>
+      <div className="directory-items">
+        {products.map(({ id, ...otherProps }) => (
+          <DirectoryItem key={id} {...otherProps} />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
-export default Directory;
+const mapStateToProps = ({ directory: { products } }) => ({
+  products,
+});
+
+export default connect(mapStateToProps)(Directory);
