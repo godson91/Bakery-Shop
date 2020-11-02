@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -66,11 +65,11 @@ export const Header = ({ hidden, toggleNavHidden }) => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   hidden: state.nav.hidden,
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   toggleNavHidden: () => dispatch(toggleNavHidden()),
 });
 

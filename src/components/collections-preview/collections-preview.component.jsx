@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './collections-preview.styles.scss';
 
 const CollectionsPreview = ({ title, items }) => {

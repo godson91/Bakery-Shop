@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from 'react-redux';
 
 import CollectionsOverview from '../../components/collections-overview/collections-overview.component';

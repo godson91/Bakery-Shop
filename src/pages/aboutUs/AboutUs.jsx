@@ -1,4 +1,3 @@
-import React from 'react';
 import './aboutUs.styles.scss';
 
 function AboutUS() {
